@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="telasSCAI.Alterar_Excluir">
+    <Position X="1.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAACAAAAAAAACAAAAAAAABAAAACAAAIAAAAAAAA=</HashCode>
+      <FileName>Alterar_Excluir.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dadosUser" />
+      <Field Name="dados" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="telasSCAI.CadEvento">
+    <Position X="11" Y="5.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BgAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAEAA=</HashCode>
+      <FileName>CadEvento.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dados" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="telasSCAI.CadUsuario">
+    <Position X="3.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAQAAAAAAgAAAAAAAAACAEAEAAAAAAAA=</HashCode>
+      <FileName>CadUsuario.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dados" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="telasSCAI.Localidade">
+    <Position X="12.25" Y="1.75" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="telasSCAI.Localidade.LocalidadeService">
+        <TypeIdentifier>
+          <NewMemberFileName>Localidade.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Localidade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="telasSCAI.PesquisaEventonoBanco">
+    <Position X="9.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAQAAAAABARAIAAAAAAAAAABAIAAEEAAAgAAQA=</HashCode>
+      <FileName>PesquisaEventonoBanco.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="evento" />
+      <Field Name="user" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="telasSCAI.Usuario">
+    <Position X="6.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAQAACAAAAAgAAAAIAAAACAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Usuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="telasSCAI.UsuarioLogado">
+    <Position X="13.5" Y="5.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>UsuarioLogado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="telasSCAI.Validador">
+    <Position X="0.5" Y="4.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAhAAA=</HashCode>
+      <FileName>Validador.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="telasSCAI.Evento_variaveis">
+    <Position X="4.25" Y="4.25" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AQAADAAACACFAAAAhQAAAACAAEAAoBRAAAEVAAEBEQw=</HashCode>
+      <FileName>Evento_variaveis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
