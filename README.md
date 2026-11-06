@@ -15,16 +15,15 @@ Este projeto foi desenvolvido por três pessoas, com divisão de tarefas e traba
 
 ## Tecnologias utilizadas
 
-- [Linguagem: C# ou Python]
-- [Banco de dados: MySQL
+- [Linguagem: C# ou Python
+- Banco de dados: MySQL
 - 
 
 ## Como executar
 
 1. Clone o repositório:
 2. importe o arquivo .sql
-3. []
-4. [Execute o projeto]
+4. Execute o projeto
 
 ## Equipe
 
