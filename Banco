@@ -1,0 +1,107 @@
+
+create database Agenda_SCA;
+use Agenda_SCA;
+
+create table local_Eventos (
+
+idlocal int AUTO_INCREMENT PRIMARY KEY,
+	numero int,
+	capacidade_pessoa int,
+	endereco varchar(200),
+	cidade varchar (100),
+	estado varchar (100),
+	nome_local varchar (200),
+	capacidade_carros int
+
+);
+ create table usuario(
+	
+    idUsuario int AUTO_INCREMENT primary key,
+    nome varchar(200),
+    email varchar (100),
+    senha varchar (100)
+ 
+ );
+ 
+ create table tipo_evento(
+	
+    idtipo_evento int AUTO_INCREMENT primary key,
+    tipo varchar (100)
+ 
+ );
+ 
+ create table frequencia (
+	
+    idfrequencia int AUTO_INCREMENT primary key,
+    descricao ENUM('Diaria','Semanal','Mensal','Bimestral', 'Anual') NOT NULL
+
+ );
+
+create table Registro_login (
+
+	idRegistro int AUTO_INCREMENT primary key,
+    data_login DATETIME DEFAULT CURRENT_TIMESTAMP,
+    ip_acesso varchar(45),
+    idUsuario int,
+    constraint foreign key (idUsuario) references usuario (idUsuario) on DELETE CASCADE ON UPDATE CASCADE
+
+);
+
+create table Eventos (
+
+	idEventos int AUTO_INCREMENT primary key,
+    nome varchar(200),
+    descricao varchar (200),
+    preco decimal (10,2) Null,
+    idUsuario int,
+    idlocal int,
+    idtipo_evento int,
+    idfrequencia int,
+	constraint foreign key (idUsuario) references usuario (idUsuario) on DELETE CASCADE ON UPDATE CASCADE,
+	constraint foreign key (idlocal) references Local_Eventos (idlocal) on DELETE CASCADE ON UPDATE CASCADE,
+	constraint foreign key (idtipo_evento) references tipo_evento (idtipo_evento) on DELETE CASCADE ON UPDATE CASCADE,
+    constraint foreign key (idfrequencia) references frequencia (idfrequencia) on DELETE CASCADE ON UPDATE CASCADE
+
+);
+
+create table Agenda(
+
+	idAgenda int AUTO_INCREMENT primary key,
+    data date,
+    hora time,
+    idEventos int,
+    constraint foreign key (idEventos) references Eventos (idEventos) on DELETE CASCADE ON UPDATE CASCADE
+
+);
+
+insert into usuario (nome,email,senha) values ('Bianca','bianca.silva1@gmail.com','1234'), ('Bruna','brunalameira@gmail.com','2345'), 
+('Henrique','henrique@gmail.com','8909');
+
+insert into local_eventos (numero, capacidade_pessoa,endereco,cidade,estado,nome_local,capacidade_carros) values 
+(1430 ,100,'Rua fernando alves viera','Campinas','São Paulo','Igreja Deus é amor',20), 
+(1004 ,150,'Rua nivaldo alves bonilha','Campinas','São Paulo','Igreja Deus no comando',20),
+(1000 ,250,'Rua Heitor Lacerda Guedes','Campinas','São Paulo','IFSP-Campinas',30);
+
+insert into tipo_evento (tipo) values ('Culto'),('Social'),('Festa');
+
+insert into frequencia (descricao) values ('semanal'),('mensal'),('Anual');
+
+insert into Eventos (nome, descricao, preco,idUsuario,idLocal,idtipo_evento,idfrequencia) values ('Missa','Rezar para jesus', 0.00, 1,1,1,1), ('Bingo','Bingo da fé', 5.00, 2,2,2,2), 
+('Festa Junina','Festa são joão', 30.00, 3,3,3,3);
+
+insert into Agenda (data,hora,idEventos) values ('2026-04-19', '08:00:00',1),('2026-04-27', '14:00:00',2),('2026-07-20', '19:00:00',3);
+
+insert into Registro_login (ip_acesso,idUsuario) values ('192.168.1.1',1),('192.168.0.10',2),('192.168.100.14',3);
+
+select * from usuario;
+select * from Eventos;
+select * from local_eventos;
+select * from tipo_evento;
+select * from frequencia;
+select * from Agenda;
+select * from Registro_login;
+
+
+
+
+
