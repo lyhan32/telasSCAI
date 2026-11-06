@@ -9,28 +9,26 @@ Este projeto foi desenvolvido por três pessoas, com divisão de tarefas e traba
 ## Funcionalidades
 
 - Cadastro e login de usuários
-  -criar, editar e excluir compromissos]
-- visualizar compromissos por data]
+- criar, editar e excluir compromissos
+- visualizar compromissos por data
 - lembretes, categorias, busca.
 
 ## Tecnologias utilizadas
 
 - [Linguagem: C# ou Python
 - Banco de dados: MySQL
-- 
+ 
 
 ## Como executar
-
-1. Clone o repositório:
-2. importe o arquivo .sql
-4. Execute o projeto
+1. importe o arquivo .sql
+2. Execute o projeto
 
 ## Equipe
 
-- Henrique dos Santos: [GUI]
-- [Nome do colaborador 1]: [GUI]
-- [Nome do colaborador 2]: [codigo]
+- Henrique dos Santos: GUI
+- Bianca: GUI
+- Bruna: codigo
 
 ## Aprendizados
 
-Durante o desenvolvimento, praticamos [modelagem de banco de dados, autenticação de usuários, uso de Git em equipe e organização de tarefas
+Durante o desenvolvimento, praticamos modelagem de banco de dados, autenticação de usuários, uso de Git em equipe e organização de tarefas
